@@ -1,0 +1,37 @@
+.nav {
+  margin-right: auto;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:first-child),
+.header__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav__link {
+  position: relative;
+
+  padding: 32px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+
+  transition: color var(--time) var(--anim-time);
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.header__link:hover,
+.header__link:focus {
+  color: var(--accent-color);
+
+  transition: transform var(--time) var(--anim-time);
+}

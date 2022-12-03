@@ -1,0 +1,123 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--bg-color);
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.footer-items:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+
+  transition: color var(--time) var(--anim-time);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
+}
+.footer-social {
+  justify-content: center;
+}
+.footer-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.subscription {
+  display: flex;
+}
+
+.footer_title {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.subscription {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: auto;
+  min-width: 200px;
+  height: 50px;
+}
+
+.footer-form-btn-icon {
+  fill: var(--primary-white-color);
+}
+
+.footer-form-field {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: outline var(--time) var(--anim-time), drop-shadow var(--time) var(--anim-time);
+}
+
+.footer-form-field:focus {
+  outline: 1px solid rgb(94, 145, 94, 0.3);
+  border: none;
+  box-shadow: 3px 3px 20px rgb(94, 145, 94, 0.3);
+}
+
+.footer-form-field:not(:placeholder-shown):required:invalid {
+  outline: 1px solid #ff0000;
+  border: none;
+  box-shadow: 3px 3px 20px #ff0000;
+}
+
+.footer-form-field:not(:placeholder-shown):required:valid {
+  outline: 1px solid var(--accent-color);
+  border: none;
+  box-shadow: 3px 3px 20px var(--accent-color);
+}
