@@ -1,5 +1,8 @@
 .nav {
   margin-right: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -7,9 +10,13 @@
   align-items: center;
 }
 
-.nav__item:not(:first-child),
-.header__item:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 50px;
+}
+.header__item:not(:first-child) {
+  @media screen and(min-width: 1199px) {
+    margin-left: 50px;
+  }
 }
 
 .nav__link {

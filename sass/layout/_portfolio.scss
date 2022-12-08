@@ -1,17 +1,28 @@
 .portfolio {
   @extend %section;
 }
+.btn__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
+}
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: calc(-1 * var(--half-margin));
-  margin-right: calc(-1 * var(--half-margin));
+  gap: 30px;
 }
 .card-set__item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-bottom: var(--half-margin);
-  margin-right: var(--half-margin);
+  width: 100%;
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    width: 354px;
+    height: auto;
+  }
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
 }
 
 .card-set__link {
@@ -79,7 +90,7 @@
 }
 .card-set__subtitle {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--primary-text-color);

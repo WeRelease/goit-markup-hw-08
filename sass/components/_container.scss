@@ -1,8 +1,29 @@
+$breacpoints: (
+  'phone': 480px,
+  'tablet': 768px,
+  'desctop': 1200px,
+);
+
 .container {
-  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+
+  // outline: 2px solid red;
+  // outline-offset: -2px;
+
+  //Phone screen
+  @media screen and (min-width: 480px) {
+    width: 448px;
+  }
+
+  //Tablet screen
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  //Phone screen
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
