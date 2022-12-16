@@ -202,8 +202,10 @@
 .modal__desc {
   color: var(--title-text-color);
   user-select: none;
-
-  font-size: 14px;
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+  }
+  font-size: 12px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }

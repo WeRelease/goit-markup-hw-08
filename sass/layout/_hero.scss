@@ -2,6 +2,7 @@
   max-width: 1600px;
   text-align: center;
   margin: 0 auto;
+  padding: 118px 0;
 
   background-color: var(--bg-color);
 
@@ -20,7 +21,6 @@
 
   //Tablet screen
   @media screen and (min-width: 481px) {
-    padding: 118px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/img_md@1x.jpg);
 
@@ -47,7 +47,6 @@
     font-size: 44px;
     line-height: calc(60 / 44);
   }
-  // width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -55,8 +54,6 @@
   font-weight: 900;
   font-size: 26;
   line-height: calc(42 / 26);
-  // font-size: 44px;
-  // line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;

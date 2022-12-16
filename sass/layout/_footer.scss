@@ -13,11 +13,16 @@
   }
 }
 
+.footer-list {
+  font-style: normal;
+}
+
 .footer-adress__wrap {
   text-align: center;
   margin-bottom: 60px;
   @media screen and(min-width: 1200px) {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 .footer__logo {
@@ -25,9 +30,6 @@
   margin-bottom: 28px;
 }
 
-// .footer-addres {
-//   margin-bottom: 60px;
-// }
 .footer-items:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -46,14 +48,15 @@
   color: var(--accent-color);
 }
 .footer-social {
+  margin-bottom: 60px;
   @media screen and(min-width:1200px) {
+    margin-bottom: 0;
     text-align: left;
     margin-right: auto;
     margin-left: auto;
   }
   justify-content: center;
   text-align: center;
-  // margin-bottom: 60px;
 }
 
 .footer__title {

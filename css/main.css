@@ -518,9 +518,14 @@ img {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .modal__desc {
+    font-size: 14px;
+  }
 }
 
 .modal__link {
@@ -685,13 +690,16 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: var(--primary-white-color);
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -735,6 +743,12 @@ textarea {
   letter-spacing: 0.02em;
   color: #212121;
 }
+@media screen and (max-width: 479px) {
+  .mobile-menu-link {
+    font-size: 30px;
+    line-height: 1.5666666667;
+  }
+}
 
 .mobile-contacts-item {
   margin-bottom: 32px;
@@ -747,13 +761,25 @@ textarea {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media screen and (max-width: 479px) {
+  .mobile-contacts-link {
+    font-size: 23px;
+    line-height: 1.7391304348;
+  }
+}
 
 .mobile-contacts-link-mail {
   font-weight: 500;
   font-size: 24px;
-  line-height: 1.1666666667c;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media screen and (max-width: 479px) {
+  .mobile-contacts-link-mail {
+    font-size: 17px;
+    line-height: 1.6470588235;
+  }
 }
 
 .mobile-social {
@@ -762,15 +788,28 @@ textarea {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 479.98px) {
+  .mobile-social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -3px;
+  }
+}
 
 .mobile-social-link {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (max-width: 479px) {
+  .mobile-social-link {
+    font-size: 12px;
+    line-height: 1.8333333333;
+  }
 }
 
 .mobile-contacts {
@@ -853,6 +892,10 @@ textarea {
   }
 }
 
+.footer-list {
+  font-style: normal;
+}
+
 .footer-adress__wrap {
   text-align: center;
   margin-bottom: 60px;
@@ -860,6 +903,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer-adress__wrap {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -888,6 +932,7 @@ textarea {
 }
 
 .footer-social {
+  margin-bottom: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -895,6 +940,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
+    margin-bottom: 0;
     text-align: left;
     margin-right: auto;
     margin-left: auto;
@@ -1033,10 +1079,8 @@ textarea {
 
 .gang {
   background: var(--bg-second-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .gang__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1101,6 +1145,7 @@ textarea {
   max-width: 1600px;
   text-align: center;
   margin: 0 auto;
+  padding: 118px 0;
   background-color: var(--bg-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -1116,7 +1161,6 @@ textarea {
 }
 @media screen and (min-width: 481px) {
   .hero {
-    padding: 118px 0px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_md@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md@1x.jpg);
   }

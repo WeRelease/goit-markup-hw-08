@@ -1,11 +1,9 @@
 .gang {
   @extend %section;
   background: var(--bg-second-color);
-  padding-bottom: 94px;
-  padding-top: 94px;
 
   &__list {
-    @media screen and(min-width: 480px) {
+    @media screen and(min-width: 320px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
