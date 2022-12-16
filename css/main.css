@@ -1091,6 +1091,10 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (min-width: 768px) {
+  .gang__list {
     margin-left: -15px;
     margin-right: -15px;
   }
