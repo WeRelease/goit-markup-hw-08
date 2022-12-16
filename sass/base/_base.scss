@@ -2,10 +2,7 @@ body {
   font-family: 'Roboto', 'Raleway', sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-}
-
-html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .hiden__title {
