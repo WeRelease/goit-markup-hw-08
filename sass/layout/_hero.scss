@@ -1,6 +1,5 @@
 .hero {
   max-width: 1600px;
-  padding: 200px 0px;
   text-align: center;
   margin: 0 auto;
 
@@ -21,6 +20,7 @@
 
   //Tablet screen
   @media screen and (min-width: 481px) {
+    padding: 118px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/img_md@1x.jpg);
 
@@ -31,12 +31,13 @@
   }
   //Desctop screen
   @media screen and (min-width: 769px) {
+    padding: 200px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero/img_lg@1x.jpg);
+      url(../images/hero/Img_lg@1x.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/img_lg@2x.jpg);
+        url(../images/hero/Img_lg@2x.jpg);
     }
   }
 }
@@ -46,7 +47,7 @@
     font-size: 44px;
     line-height: calc(60 / 44);
   }
-  width: 360px;
+  // width: 360px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
