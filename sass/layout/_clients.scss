@@ -23,13 +23,17 @@
     }
   }
 
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__link {
     display: flex;
     justify-content: center;
     width: 100%;
-
-    padding-top: 16px;
-    padding-bottom: 16px;
+    height: 92px;
 
     color: #afb1b8;
 
